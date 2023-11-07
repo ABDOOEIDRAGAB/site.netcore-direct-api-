@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FirstPro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FirstPro.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="icon">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+    </div>
+
+    <header class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid" style="background-color:black">
+
+                <ul class="nav navbar-nav" style="padding:7px">
+                     <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#">ِAbout</a></li>
+
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">individual<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Real Estate Finance </a></li>
+                            <li><a href="#"> Personal Finance </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Commerce <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Real Estate Finance </a></li>
+                            <li><a href="#"> Personal Finance </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Prices <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Quick financing calculator </a></li>
+                            <li><a href="#"> Detailed financing calculator </a></li>
+                            <li><a href="#"> Prices of financing products </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="active"><a href="#">property</a></li>
+                    <li class="active"><a href="#">Relationship</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
+
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Apply <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Applyy </a></li>
+                            <li><a href="#"> Apply Now </a></li>
+                            <li><a href="#"> Apply Commerce </a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <div class="img-sm">
+                    <img width="200" height="60" src="~/images/MicrosoftTeams-image (2).png" alt="img" />
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js">  </script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

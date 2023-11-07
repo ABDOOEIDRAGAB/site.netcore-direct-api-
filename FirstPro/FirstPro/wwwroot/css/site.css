@@ -1,0 +1,241 @@
+html {
+  font-size: 14px;
+}
+
+.header img:hover{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow-x:hidden;
+}
+/**/
+
+.img-sm{
+    float: right;
+}
+
+.icon {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 936px) {
+    .header img{
+        margin-right: 350px;
+    }
+
+}
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+
+        .header {
+            font-size: 11px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .header .container-fluid .navbar-nav li {
+            background-color: red;
+        }
+
+        .icon {
+            display: block;
+            cursor: pointer;
+            height: 50px;
+        }
+
+        .header {
+            display: none;
+        }
+
+            .header img {
+                margin-right: 170px;
+            }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .test a {
+            height: 15%;
+        }
+    }
+    /* */
+    .test {
+        position: relative;
+        width: 100%;
+    }
+
+        .test img {
+            width: 100%;
+        }
+
+        .test a {
+            position: absolute;
+            top: 60%;
+            left: 87%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            width: 17%;
+            height: 10%;
+        }
+
+            .test a:hover {
+                background-color: red;
+            }
+
+    @media only screen and (max-width: 767px) {
+
+        .test a {
+            font-size: 10px;
+            height: 15%;
+            left: 88%;
+            width: 20%;
+            font-size: 13px;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        .test a span {
+            font-size: 20px;
+        }
+    }
+    /* */
+    .section2 {
+        width: 100%;
+        background-color: beige;
+        padding-top: 100px;
+    }
+
+        .section2 p:first-child {
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .section2 div img {
+            color: black;
+            font-size: 15px;
+            margin-left: 33%;
+        }
+
+        .section2 div p {
+            padding-top: 30px;
+        }
+
+    @media only screen and (min-width: 1200px) {
+        .section2 {
+            height: 400px;
+        }
+    }
+    /* */
+    .section3 {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+        .section3 .row div {
+            background-color: darkslategrey;
+            border: 5px solid white;
+            padding-top: 20px;
+        }
+
+        .section3 img, .section3 .row p {
+            margin-left: 40%;
+            padding-top: 30px;
+        }
+
+        .section3 div p {
+            color: white;
+        }
+
+    @media only screen and (min-width: 1200px) {
+        .section3 p {
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .section3 .row p {
+            margin-left: 33%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .section3 p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+    /* */
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+        }
+
+    .image-container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+    }
+
+    .section4 {
+        background-color: lavenderblush;
+        width: 100%;
+        line-height: 50px;
+        padding-top: 50px;
+    }
+    /* */
+    .section5 {
+        background-color: gray;
+        width: 100%;
+    }
+
+        .section5 .fa-2xl {
+            color: red;
+            cursor: pointer;
+        }
+
+        .section5 span {
+            display: block;
+        }
+
+        .section5 img {
+            width: 200px;
+            height: 150px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+            .section5 img:hover {
+                border: 2px dashed gray;
+                padding: 5px;
+            }
+
+    @media only screen and (min-width: 1200px) {
+
+        .section5 {
+            height: 180px;
+            padding-top: 30px;
+        }
+    }
